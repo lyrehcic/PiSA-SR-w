@@ -9,7 +9,7 @@ def parse_args(input_args=None):
 
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("--is_module", default=False)
+    parser.add_argument("--is_module", type=str2bool, default=False)
     parser.add_argument("--tracker_project_name", type=str, default="pisasr2025")
 
     # args for the loss function
